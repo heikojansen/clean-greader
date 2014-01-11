@@ -35,7 +35,7 @@ Same as Installation - just overwrite the files.
 As of the "build from scratch" update, the theme is completely written using [SASS/SCSS](http://sass-lang.com/).
 maA tutorial on [Devloping With Sass and Chrome DevTools](http://net.tutsplus.com/tutorials/html-css-techniques/developing-with-sass-and-chrome-devtools/) can be found on net.tutsplus.com.
 
-By running the `css/watch.main.scss.sh`* script in the background any change to any contained `.scss` file will automatically be translated into  the `main.css`.
+By running the `css/convert-main.scss.sh`* or `css/watch-main.scss.sh`* script any change to any contained `.scss` file will automatically be translated into  the `main.css`.
 
 ---
 
@@ -53,6 +53,8 @@ These are the only official support browsers, so there will be no guarantee for 
 The first image in an article is displayed with a max resolution of 128x128 to provide some sort of preview. I decidet to implement this, since I have a lot of feed just displaying a very large image before any content. Meh.
 
 However, there's a feature to override this setting for any domain. The configuration is stored within the `css/config/_fullsizeimages.scss` file. Take a look at source of the images in your articles and add one filter per line for each domain you want to disable the preview feature.
+
+Don't forget to run the `css/convert-main.scss.sh` file after making any changes to scss files.
 
 ## Tiny Tiny RSS Settings
 | Setting                                          | Value      |
