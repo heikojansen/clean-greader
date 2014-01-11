@@ -197,6 +197,16 @@
     height: auto;
   }
 
+  /* main feed image - don't decrease images from defined domains (see config/fullsizeimages) */
+  @each $domain in $fsi_domains {
+    div[xmlns="http://www.w3.org/1999/xhtml"]:first-child a img[src*="#{$domain}"],
+    p:first-of-type img[src*="#{$domain}"],
+    > span:first-child > span:first-child > img:first-child[src*="#{$domain}"] {
+      max-height: none;
+      max-width: 640px;
+    }
+  }
+
   /* images (except of main) and vides*/
   p > img,
   p > a:not([href*="feedburner"]) > img,

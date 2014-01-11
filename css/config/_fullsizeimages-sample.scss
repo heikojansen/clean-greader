@@ -1,0 +1,15 @@
+/**
+  *  File:         _fullsizeimages.scss
+  *******************************
+  *
+  *  Description:   domains (acually from the image url), where the first picture will not be resized to a max of 128x128
+  *
+  *  Author:        Sven Flickinger (naeramarth7)
+  *  File Created:  2014-01-11
+**/
+
+/** add one domain per line **/
+
+$fsi_domains:
+"//narf-archive.com/"
+;
